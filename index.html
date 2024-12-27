@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Самостійна робота №1.1</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1E2737;
+            color: #D8DDD3;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #539BFB;
+        }
+
+        a:hover {
+            color: #53FFFF;
+        }
+
+        header {
+            background: #181A21;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            color: #FFF600;
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #D8DDD3;
+        }
+
+        nav ul li a:hover {
+            color: #539BFB;
+        }
+
+        section {
+            margin: 20px;
+            padding: 40px;
+            background: #181A21;
+            border-radius: 5px;
+        }
+        
+        section h2 {
+            color: #FFF600;
+        }
+
+        section ul, section ol {
+            margin: 10px 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th, table td {
+            border: 1px solid #444;
+            padding: 10px;
+        }
+
+        table th {
+            background: #181A21;
+            color: #FFF600;
+        }
+
+        img {
+            display: block;
+        }
+
+        pre {
+            font-family: 'Consolas', Courier, monospace;
+            background: #111;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #181A21;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="pagetop">Самостійна робота №1.1</h1>
+        <nav>
+            <ul>
+                <li><a href="#t1">Що таке HTML?</a></li>
+                <li><a href="#t2">Редактори коду та IDE</a></li>
+                <li><a href="#t3">Основні приклади</a></li>
+                <li><a href="#t4">Елементи</a></li>
+                <li><a href="#t5">Атрибути</a></li>
+                <li><a href="#t6">Параграфи</a></li>
+                <li><a href="#t7">Посилання</a></li>
+                <li><a href="#t8">Зображення</a></li>
+                <li><a href="#t9">Таблиці</a></li>
+                <li><a href="#t10">Списки</a></li>
+                <li><a href="#t10">Форми</a></li>
+                <li><a href="#t10">Додаткові матеріали</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="t1">
+            <h2>Що таке HTML?</h2>
+            <p>
+                <strong>HTML</strong> — це мова розмітки для створення веб-сторінок.
+            </p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t2">
+            <h2>Редактори коду та IDE</h2>
+            <p>
+                <strong>Редактор початкового коду</strong> — текстовий редактор для створення, та редагування початкового коду програм.
+            </p>
+            <p>
+                <strong>Інтегроване середовище розробки</strong> (ІСР, англ. integrated development environment або англ. IDE) — 
+                комплексне програмне рішення для розробки програмного забезпечення. Зазвичай, складається з редактора початкового коду, 
+                інструментів для автоматизації складання та відлагодження програм. Більшість сучасних середовищ розробки мають 
+                можливість автодоповнення коду.
+            </p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t3">
+            <h2>Основні приклади</h2>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Мій перший заголовок&lt;/h1&gt;
+&lt;p&gt;Мій перший параграф.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            <pre>
+&lt;h1&gt;Це заголовок 1&lt;/h1&gt;
+&lt;h2&gt;Це заголовок 2&lt;/h2&gt;
+&lt;h3&gt;Це заголовок 3&lt;/h3&gt;</pre>
+            <pre>
+&lt;p&gt;Це параграф.&lt;/p&gt;
+&lt;p&gt;Це інший параграф.&lt;/p&gt;</pre>
+            <pre>
+&lt;a href=&quot;https://w3schoolsua.github.io/&quot;&gt;Це посилання&lt;/a&gt;</pre>
+            <pre>
+&lt;img src=&quot;../images/w3schools.jpg&quot; alt=&quot;W3Schools&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;</pre>
+            <pre>
+&lt;button&gt;Натисніть мене&lt;/button&gt;</pre>
+            <pre>
+&lt;h2&gt;Невпорядкований список HTML&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Кава&lt;/li&gt;
+  &lt;li&gt;Чай&lt;/li&gt;
+  &lt;li&gt;Молоко&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Впорядкований список HTML&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Кава&lt;/li&gt;
+  &lt;li&gt;Чай&lt;/li&gt;
+  &lt;li&gt;Молоко&lt;/li&gt;
+&lt;/ol&gt;</pre>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t4">
+            <h2>Елементи</h2>
+            <p>
+                <strong>HTML елемент</strong> зазвичай складається із тегу початкового і тегу кінцевого, а зміст вставляється поміж ними. HTML елемент - це все від початкового тегу до кінцевого тегу.
+            </p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t5">
+            <h2>Атрибути</h2>
+            <ul>
+                <li>Всі HTML елементи можуть мати атрибути.</li>
+                <li>Атрибути надають додаткову інформацію про елемент</li>
+                <li>Атрибути завжди вказуються в початковому тезі</li>
+                <li>Атрибути зазвичай входять в пари ім'я/значення, наприклад: ім'я="значення"</li>
+            </ul>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t6">
+            <h2>Параграфи</h2>
+            <p>
+                <strong>Параграф</strong> – це основний спосіб розділити великий текст на невеликі логічні блоки. В HTML для розмітки параграфів призначено тег &lt;p&gt; (від англійського слова “paragraph”). Тег &lt;p&gt; є блочним елементом, він завжди починається з нового рядка та займає усю ширину веб-сторінки.
+            </p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t7">
+            <h2>Посилання</h2>
+            <p>
+                <strong>HTML посилання</strong> – це гіперпосилання.
+            </p>
+
+            <p>За замовчуванням відображатиметься (у всіх браузерах):</p>
+            <ul>
+                <li>невідвідане посилання підкреслено синім кольором,</li>
+                <li>відвідане посилання підкреслено фіолетовим кольором,</li>
+                <li>активне посилання підкреслено червоним кольором.</li>
+            </ul>
+            <p>
+                <strong>Закладки</strong> можуть бути корисними, якщо вебсторінка дуже довга. Можна помітити, наскільки ефектифно вони використані цій величезній самостійній роботі.
+            </p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t8">
+            <h2>Зображення</h2>
+            <p>
+                Це <strong>зображення</strong> медоїда, хижого ссавця родини горностаєвих. Він використаний як логотип для сайту Honey Badger, а також зображений на <strong>фавіконці</strong> сторінки в браузері.
+            </p>
+            <img style="width:512px; height:512px;" src="images/HoneyBadgerLogo_Gray.png" alt="Медоїд" usemap="#badger">
+            <map name="badger">
+                <area target="_self" alt="Носик медоїда" title="Носик медоїда" href="#pagetop" coords="307,105,16" shape="circle">
+            </map>
+            <p>
+                Його можна клацнути по носі й відправитись на самий верх цієї сторінки: таким чином створюються <strong>карти зображень</strong>.
+            </p>
+            <div style="background-image:url('images/what-would-you-do.jpg'); height:550px; text-shadow: 0 0 10px #000; text-align:center; line-height: 550px;">
+                <p style="height:100px; vertical-align: middle; color:yellow">
+                    А це <strong>фонове зображення</strong> медоїда.
+                </p>
+            </div>
+            <p>
+                Елемент <strong>&lt;picture&gt;</strong> містить один або кілька елементів &lt;source&gt; кожен з яких посилається на різні зображення через атрибут srcset. 
+                Таким чином браузер може вибрати зображення, яке найкраще відповідає поточному перегляду та/або пристрою. Кожен елемент &lt;source&gt; має атрибут media? який визначає, коли зображення є найбільш підходящим.
+            </p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t9">
+            <h2>Таблиці</h2>
+            <table>
+                <caption>
+                У цьому підписі таблиці, або <strong>caption</strong>, зазначу, що налаштування стилю цієї таблиці можна подивитись у <a href="https://github.com/barsikfive/zpi-zp41_appINDEPENDENT-AbaievaAlina-KPI-2025">репозиторії</a> цієї самостійної роботи.
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">заголовок у thead з атрибутом scope="col"</th>
+                        <th scope="col">заголовок у шапці таблиці з атрибутом scope="col"</th>
+                        <th scope="col">заголовок у шапці таблиці з атрибутом scope="col"</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">заголовок у tbody з атрибутами scope="row" rowspan="2"</th>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                    </tr>
+                    <tr>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">заголовок у тілі таблиці з атрибутом scope="row"</th>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">заголовок у тілі таблиці з атрибутом scope="row"</th>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                        <td>звичайна клітинка в тілі таблиці</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="2">заголовок у tfoot з атрибутами scope="row" colspan="2"</th>
+                        <td>підсумкова клітинка в таблиці</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t10">
+            <h2>Списки</h2>
+            <ol>
+                <li><strong>Впорядковані</strong></li>
+                <li>Невпорядковані</li>
+                <li>Інші</li>
+            </ol>
+            <ul>
+                <li>Впорядковані</li>
+                <li><strong>Невпорядковані</strong></li>
+                <li>Інші</li>
+            </ul>
+            <dl>
+                <dt>Впорядковані:</dt>
+                <dd>були в першому прикладі.</dd>
+                <dt>Невпроядковані:</dt>
+                <dd>були в другому прикладі.</dd>
+                <dt>Серед інших</dt>
+                <dd>насправді лише один різновид, і він представленийу цьому прикладі - це <strong>список описів</strong>.</dd>
+            </dl>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t11">
+            <h2>Форми</h2>
+            <p>Форми використовуються для отримання даних від користувача.</p>
+            <p>Приклад:</p>
+            <form action="#" method="post">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Відправити</button>
+            </form>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+
+        <section id="t12">
+            <h2>Додаткові матеріали</h2>
+            <p>З основами HTML, HTML5 та довідником тегів ознайомилась.</p>
+            <p>
+                ↑ <a href="#pagetop">до меню</a> ↑
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <em>
+                Студентка групи ЗПІ-зп41<br>
+                Абаєва Аліна Віталіївна.
+            </em>
+        </p>
+        <p>
+            ↑ <a href="#pagetop">до меню</a> ↑
+        </p>
+    </footer>
+</body>
+</html>
